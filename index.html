@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="swiper/swiper.min.css">
+    <script>
+        var pixelRatio = 1 / window.devicePixelRatio; //还原设备的真实分辨率；
+        //devicePixelRatio设备的像素比；
+
+        document.write('<meta name="viewport" content="width=device-width,initial-scale=' + pixelRatio + ',minimum-scale=' + pixelRatio + ',maximum-scale=' + pixelRatio + '" />');
+        var html = document.getElementsByTagName('html')[0];
+        var pageWidth = html.getBoundingClientRect().width;
+        html.style.fontSize = pageWidth / 10 + "px";
+    </script>
+</head>
+<body>
+    <aside>
+        <div class="search">
+            <span>上海</span>
+            <span>
+                <b><img src="img/27.png" alt=""></b>
+                <input type="text">
+            </span>
+            <span><img src="img/26.png" alt=""></span>
+        </div>
+   <div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/3.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/22.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/23.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/24.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/25.jpg" alt=""></div>
+    </div>
+    <div class="swiper-pagination"></div>
+   </div></aside>
+    <div class="explain">6/22中雨 紫外线弱，无需特别防护</div>
+        <ul>
+            <li>
+                <span>推荐优惠劵</span>
+                <span>共13条<img src="img/9.png" alt=""></span>
+            </li>
+            <li>
+                <span>买减</span>
+                <span>买100元商品减10元<br>限佰草集面膜</span>
+                <span>&yen;10</span>
+                <span>上海家化发起2016/06/01至2016/07/01</span>
+            </li>
+        </ul>
+        <h5><span>品牌馆</span></h5>
+        <section class="brand">
+            <img src="img/10.png" alt="">
+            <img src="img/11.png" alt="">
+            <span>品牌馆</span>
+        </section>
+        <ol class="shop">
+            <li>
+                <img src="img/5.png" alt="">
+                <span>太极·日月·蕴美精华</span>
+                <p>&yen;646<a>劵</a><a>惠</a></p>
+                
+            </li>
+            <li>
+                <img src="img/6.png" alt="">
+                <span>新七白面膜泥补水保湿</span>
+                <p>&yen;266<a>劵</a><a>惠</a></p>
+                <del>&yen;300</del>
+            </li>
+            <li>
+                <img src="img/7.png" alt="">
+                <span>新七白美白日霜</span>
+                <p>&yen;304<a>惠</a><b></b></p>
+                <del>&yen;350</del>
+             </li>
+            <li>
+                <img src="img/8.png" alt="">
+                <span>新玉润补水保湿膏</span>
+                <p>&yen;219<a>劵</a><b></b></p>
+                <del>&yen;120</del>
+            </li>
+        </ol>
+        <section><img src="img/12.png" alt=""></section>
+        <ol class="shop">
+            <li>
+                <img src="img/13.png" alt="">
+                <span>保湿洁面补水霜</span>
+                <p>&yen;227<a>劵</a><a>惠</a></p>
+                <del>&yen;320</del>
+                
+            </li>
+            <li>
+                <img src="img/14.png" alt="">
+                <span>净透控油爽肤水</span>
+                <p>&yen;108<a>劵</a><a>惠</a></p>
+                <del>&yen;120</del>
+            </li>
+            <li>
+                <img src="img/15.png" alt="">
+                <span>净透控油爽肤水(新品)</span>
+                <p>&yen;304<a>惠</a><b></b></p>
+                
+             </li>
+            <li class="mall">
+              <img src="img/16.png" alt="">
+              <span>更多商品</span>
+            </li>
+        </ol><br><br><br><br><br><br>
+        <ol class="menu">
+            <li><img src="img/17.png" alt=""><span>主页</span></li>
+            <li><img src="img/18.png" alt=""><span>干货</span></li>
+            <li><img src="img/21.png" alt=""></li>
+            <li><img src="img/19.png" alt=""><span>购物车</span></li>
+            <li><img src="img/20.png" alt=""><span>我的</span></li>
+        </ol>
+         <script src="swiper/swiper.min.js"></script>
+    <script type="text/javascript">
+    window.onload = function() {
+      var mySwiper = new Swiper ('.swiper-container', {
+        direction:'horizontal',
+        loop: true,
+        autoplay:1000,
+        speed:2000,
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+　　　　  autoplayDisableOnInteraction : false,
+        scrollbar: '.swiper-scrollbar',
+         pagination: {
+      el: '.swiper-pagination',
+    },
+      });
+    }        
+    </script>
+</body>
+</html>
